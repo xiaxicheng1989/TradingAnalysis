@@ -52,4 +52,18 @@ Briefly summarised:
 
 <img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/missingdata.png" width="40%">
 
+Before further moving on to modeling, the share prices are normalised.
+
+- Modeling: Modeling is mainly done using Lasso. Here I optimise:
+  1. Lasso alpha
+  2. Length of the traning data 
+  3. Length of the testing data
+  4. Time bin of average to reduce the noise
+ An example is shown below:
+ 
+<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/example.png" width="60%">
+
+To validate the model, I not only use the MSE for the validation set. As mean reversion is demanded, I look at the difference between the predicted price and the real price. A minimum in the sum of the difference and the peak-peak(min/max) would give us a good indication of correct prediction. These has been applied on two liquid and two iliquid equities for testing in the notebook.  
+ 
+ 
 

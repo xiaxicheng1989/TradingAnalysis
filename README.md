@@ -50,5 +50,6 @@ The development of this VBA is purely based on the master notebook, which was us
 Briefly summarised:  
 - Data cleaning: Equity data downlaoded from bloomberg arent nessesarily clean, hence, data needs to be filled, which in turn affects prediciton outcome. After going through all data of 500 companies, we can illustrate the number of companies with maximal percentage of missing data as below:
 
-<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/missingdata.png" width="60%">
+<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/missingdata.png" width="40%">
+
 

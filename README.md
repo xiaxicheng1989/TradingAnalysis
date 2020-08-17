@@ -34,5 +34,10 @@ This seems to make sense. As Bloomberg doesn’t own any raw data, they are not 
 - 3 Lasso parameters for each trade equity
 - 50 selected stocks for each lasso setting
 - Refresh the live data of the each selected stock 30 times per day.
-This makes 3 x (500 x 1 x 2 + 20 x 3 x 50 x 30) = 273 000 hits.
-This turns out to be quite large, but we are under daily cap.
+
+This makes 3 x (500 x 1 x 2 + 20 x 3 x 50 x 30) = 273 000 hits. This turns out to be quite large, but we are under daily cap.
+
+## Python:
+VBA mainly calls two python functions:  <code>GetPeerParameters</code> and <code>showLivePrediction</code>. The structure of the python part of the software is illustrated below:
+
+<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/pythonstructure.png" width="40%">

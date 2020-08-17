@@ -63,7 +63,13 @@ Before further moving on to modeling, the share prices are normalised.
  
 <img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/example.png" width="60%">
 
+(The top graph show the training set in orange and the target in blue. The second graph shows the prediction of the next day's price in orange, compared with the actual return in basis points in blue. The final graph shows the difference in the prediction and the real price. The color coding illustrates the level of mean reversion.)
+
+
 To validate the model, I not only use the MSE for the validation set. As mean reversion is demanded, I look at the difference between the predicted price and the real price. A minimum in the sum of the difference and the peak-peak(min/max) would give us a good indication of correct prediction. These has been applied on two liquid and two iliquid equities for testing in the notebook.  
  
  
+# Outlook
+To be able to correctly judge if market participation becomes significant, one could construct indicator based on the min-max of the mean reversion graph. As expected, the trigger level will be different depending on the liquidity of the equity, which need to be evaluated using past data for each company.
 
+Inaddition, the codes were writting using 80:20 rule. The focus was on understanding the driving force. Hence, the progromme is fairly slow and inefficient.

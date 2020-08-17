@@ -5,7 +5,7 @@ I combine VBA and python for the project, where VBA is automated to extract data
 
 This is the outcome on the real-time trading analysis on the European and American stocks. Here, I use linear dimensionality reduction (lasso) to estimate the price return of any equity based on the peer share price. This can be used to analyse subjective market participation.
 
-The structure of the programme is described by:  
+The structure of the programme (VBATesting.xlsx) is described by:  
 
 <img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/schematic.png" width="50%">
 
@@ -40,4 +40,9 @@ This makes 3 x (500 x 1 x 2 + 20 x 3 x 50 x 30) = 273 000 hits. This turns out t
 ## Python:
 VBA mainly calls two python functions:  <code>GetPeerParameters</code> and <code>showLivePrediction</code>. The structure of the python part of the software is illustrated below:
 
-<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/pythonstructure.png" width="40%">
+<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/pythonstructure.png" width="60%">
+
+More detail on the function description can be found in "FunctionDescription.docx"
+
+# Backbone for the programme
+The development of this VBA is purely based on the master notebook, which was used to explore the equity data. (Northamerica.ipynb)

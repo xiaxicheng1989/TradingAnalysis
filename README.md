@@ -61,7 +61,7 @@ Before further moving on to modeling, the share prices are normalised.
   4. Time bin of average to reduce the noise
  An example is shown below:
  
-<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/example.png" width="60%">
+<img src="https://github.com/xiaxicheng1989/TradingAnalysis/blob/master/plots/example.png" width="80%">
 
 (The top graph show the training set in orange and the target in blue. The second graph shows the prediction of the next day's price in orange, compared with the actual return in basis points in blue. The final graph shows the difference in the prediction and the real price. The color coding illustrates the level of mean reversion.)
 
